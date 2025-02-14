@@ -30,7 +30,7 @@ return {
 
    -- tab bar
    enable_tab_bar = true,
-   hide_tab_bar_if_only_one_tab = false,
+   hide_tab_bar_if_only_one_tab = true,
    use_fancy_tab_bar = false,
    tab_max_width = 25,
    show_tab_index_in_tab_bar = false,
@@ -38,10 +38,14 @@ return {
 
    -- window
    window_padding = {
-      left = 10,
-      right = 10,
-      top = 5,
-      bottom = 5,
+      left = 20,
+      right = 20,
+      top = 10,
+      bottom = 10,
+   },
+   window_content_alignment = {
+      horizontal = 'Center',
+      vertical = 'Center',
    },
    adjust_window_size_when_changing_font_size = false,
    window_close_confirmation = 'NeverPrompt',

@@ -91,4 +91,8 @@ local colorscheme = {
    compose_cursor = mocha.flamingo,
 }
 
-return colorscheme
+return require('utils').tbl_deep_extend(
+   'force',
+   colorscheme,
+   require('wezterm').color.get_builtin_schemes()['tokyonight_night']
+)
